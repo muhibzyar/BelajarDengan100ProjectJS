@@ -1,109 +1,141 @@
- **Level 1: Dasar (1-20)**
-1. Kalkulator sederhana
-2. Konverter suhu (Celsius ke Fahrenheit)
-3. Jam digital
-4. To-do list sederhana
-5. Penghitung mundur (countdown timer)
-6. Aplikasi kertas-gunting-batu
-7. Penentu tahun kabisat
-8. Konverter mata uang sederhana
-9. Penghitung karakter dan kata
-10. Aplikasi random quote
-11. Pengacak warna latar
-12. Stopwatch
-13. Mengubah teks ke uppercase/lowercase
-14. Kalkulator usia
-15. Slider gambar sederhana
-16. Deteksi palindrome
-17. Validasi form sederhana (email & password)
-18. Konversi angka ke kata (misal, 1 menjadi "satu")
-19. Penghitung hari antara dua tanggal
-20. Aplikasi kuis dengan skor
+# 100ProjectLearningJS
+100 Proyek JavaScript untuk Latihan
+Selamat datang di repositori 100 Proyek JavaScript saya! 🚀
 
- **Level 2: Pemula Lanjutan (21-40)**
-21. Alarm digital
-22. Pencari nomor faktorial
-23. Penentu bilangan prima
-24. Simulasi lempar koin
-25. Penentu angka Fibonacci
-26. Game tebak angka
-27. Form pendaftaran dengan validasi lengkap
-28. Aplikasi penghitung BMI
-29. Penentu bilangan ganjil/genap
-30. Konversi bilangan biner ke desimal
-31. Aplikasi kalkulator persentase
-32. Stopwatch dengan lap timer
-33. Voting/polling app sederhana
-34. Konversi berat (kg ke lbs)
-35. Aplikasi penghitung kalori
-36. Catatan harian sederhana
-37. Kalkulator bunga sederhana
-38. Pengundian nama acak
-39. Aplikasi simulasi kalkulasi diskon
-40. Teks editor sederhana
 
- **Level 3: Intermediate (41-60)**
-41. Aplikasi pencatat waktu (timer dan stopwatch)
-42. Penyaring data (misal, filter data tabel berdasarkan input)
-43. Aplikasi manajemen tugas dengan penyimpanan lokal (localStorage)
-44. Aplikasi penanda lokasi dengan Google Maps API
-45. Sistem login/logout sederhana
-46. Aplikasi daftar belanja dengan fitur tambah/hapus
-47. Konverter JSON ke CSV
-48. Kalkulator pajak sederhana
-49. Aplikasi pengelola kontak
-50. Penampil data cuaca (menggunakan API)
-51. Aplikasi kamus (dengan API)
-52. Aplikasi cek ejaan (spell checker)
-53. Aplikasi pengecek harga saham (menggunakan API)
-54. Aplikasi perhitungan cicilan kredit
-55. Aplikasi kalender sederhana
-56. Chatbot sederhana
-57. Aplikasi to-do list dengan drag & drop
-58. Galeri foto dengan lightbox
-59. Aplikasi editor markdown
-60. Aplikasi timer pomodoro
+Di repositori ini, saya sedang mengerjakan serangkaian proyek JavaScript untuk meningkatkan keterampilan saya, membangun portofolio saya, dan mendapatkan pengalaman praktis dalam pengembangan JavaScript. Tujuan saya adalah menyelesaikan 100 proyek, mulai dari yang dasar hingga yang lanjutan, dalam beberapa bulan ke depan.
 
- **Level 4: Advanced (61-80)**
-61. Aplikasi manajemen proyek
-62. Aplikasi keuangan pribadi (pemasukan dan pengeluaran)
-63. Aplikasi kalkulator pinjaman
-64. Aplikasi pelacak kebiasaan
-65. Pencarian film menggunakan API (seperti IMDb)
-66. Sistem login dengan autentikasi token JWT
-67. Aplikasi manajemen inventaris
-68. Aplikasi pelacak waktu kerja
-69. Aplikasi manajemen tugas dengan kategori dan penyimpanan cloud
-70. Aplikasi editor gambar (crop, resize, filter)
-71. Aplikasi blogging dengan editor WYSIWYG
-72. Aplikasi galeri foto dengan upload dan penyimpanan cloud
-73. Aplikasi pelacak pengeluaran dengan grafik visualisasi
-74. Aplikasi catatan dengan pencarian dan filter
-75. Aplikasi penjadwalan acara
-76. Aplikasi pelacak pengiriman paket (menggunakan API)
-77. Aplikasi manajemen kelas online
-78. Aplikasi reminder dengan notifikasi
-79. Aplikasi portofolio pribadi interaktif
-80. Aplikasi manajemen karyawan
+Proyek-proyek ini mencakup berbagai topik, termasuk:
 
- **Level 5: Master (81-100)**
-81. Aplikasi manajemen keuangan lengkap (pemasukan, pengeluaran, laporan, dan analisis)
-82. Sistem pembayaran online sederhana
-83. Sistem autentikasi pengguna dengan OAuth
-84. Aplikasi forum diskusi dengan komentar dan voting
-85. Aplikasi pencarian resep dengan filter bahan
-86. Sistem reservasi online (misal, reservasi restoran)
-87. Aplikasi manajemen perpustakaan digital
-88. Aplikasi dashboard analitik
-89. Sistem CRM sederhana
-90. Aplikasi marketplace (jual beli online)
-91. Aplikasi e-learning dengan kuis dan materi
-92. Aplikasi manajemen proyek dengan kolaborasi tim
-93. Sistem tracking tugas berbasis kanban
-94. Sistem pengelola inventaris real-time
-95. Aplikasi chat real-time dengan WebSockets
-96. Aplikasi berbagi file dengan penyimpanan cloud
-97. Aplikasi tracking kebugaran dengan integrasi API kesehatan
-98. Sistem booking tiket event
-99. Aplikasi manajemen konten (CMS) sederhana
-100. Aplikasi pemesanan hotel lengkap dengan fitur pembayaran
+Manipulasi DOM
+Interaksi API
+Struktur data dan algoritma
+Proyek frontend (like calculators, converters, to-do lists)
+Integrasi backend
+
+Mengapa 100 Proyek?
+Saya percaya cara terbaik untuk belajar adalah melalui praktik. Dengan menangani berbagai proyek, saya bertujuan untuk mendapatkan pemahaman yang lebih dalam tentang JavaScript, meningkatkan kemampuan pemecahan masalah saya, dan mempersiapkan diri untuk tantangan pengembangan dunia nyata. Setiap proyek mewakili langkah menuju menjadi lebih mahir dan percaya diri sebagai pengembang.
+
+Terima kasih
+
+
+  Tingkat 1: Dasar (1-20)
+1. Kalkulator Sederhana  
+2. Konverter Suhu (Celsius to Fahrenheit)  
+3. Jam Digital  
+4. Daftar Tugas Sederhana  
+5. Penghitung Mundur  
+6. Permainan Batu-Gunting-Kertas  
+7. Pengecek Tahun Kabisat  
+8. Konverter Mata Uang Sederhana  
+9. Penghitung Karakter dan Kata  
+10. Aplikasi Kutipan Acak  
+11. Pengubah Warna Latar Belakang  
+12. Stopwatch  
+13. Ubah Teks ke Huruf Besar/Huruf Kecil  
+14. Kalkulator Usia  
+15. Slider Gambar Sederhana  
+16. Pendeteksi Palindrom  
+17. Validasi Formulir Sederhana (email & password)  
+18. Konversi Angka ke Kata (e.g., 1 becomes "one")  
+19. Penghitung Hari Antara Dua Tanggal  
+20. Aplikasi Kuis dengan Skor  
+
+
+  Tingkat 2: Pemula Lanjutan (21-40)
+
+
+21. Alarm Digital  
+22. Pencari Faktorial  
+23. Pengecek Bilangan Prima  
+24. Simulator Lempar Koin  
+25. Pencari Bilangan Fibonacci  
+26. Permainan Tebak Angka  
+27. Formulir Pendaftaran dengan Validasi Lengkap  
+28. Aplikasi Kalkulator BMI  
+29. Pengecek Bilangan Ganjil/Genap  
+30. Konverter Biner ke Desimal  
+31. Aplikasi Kalkulator Persentase  
+32. Stopwatch dengan Timer Putaran  
+33. Aplikasi Pemungutan Suara/Polling Sederhana  
+34. Konverter Berat (kg to lbs)  
+35. Aplikasi Penghitung Kalori  
+36. Aplikasi Buku Harian Sederhana  
+37. Kalkulator Bunga Sederhana  
+38. Pemilih Nama Acak  
+39. Simulator Perhitungan Diskon  
+40. Editor Teks Sederhana  
+
+
+  Tingkat 3: Menengah (41-60)
+  
+41. Aplikasi Pelacak Waktu (timer and stopwatch)  
+42. Filter Data (e.g., filter table data based on input)  
+43. Aplikasi Manajemen Tugas dengan Penyimpanan Lokal  
+44. Aplikasi Penanda Lokasi dengan Google Maps API  
+45. Sistem Login/Logout Sederhana  
+46. Aplikasi Daftar Belanja dengan Fitur Tambah/Hapus  
+47. Konverter JSON ke CSV  
+48. Kalkulator Pajak Sederhana  
+49. Aplikasi Manajemen Kontak  
+50. Aplikasi Tampilan Cuaca (using API)  
+51. Aplikasi Kamus (with API)  
+52. Aplikasi Pengecek Ejaan  
+53. Aplikasi Pengecek Harga Saham (using API)  
+54. Kalkulator Cicilan Pinjaman  
+55. Aplikasi Kalender Sederhana  
+56. Chatbot Sederhana  
+57. Aplikasi Daftar Tugas Seret & Lepas  
+58. Galeri Foto dengan Lightbox  
+59. Aplikasi Editor Markdown  
+60. Aplikasi Timer Pomodoro  
+
+
+  Tingkat 4: Lanjutan (61-80)
+  
+61. Aplikasi Manajemen Proyek  
+62. Aplikasi Keuangan Pribadi (income and expenses)  
+63. Aplikasi Kalkulator Pinjaman  
+64. Aplikasi Pelacak Kebiasaan  
+65. Aplikasi Pencarian Film menggunakan API (like IMDb)  
+66. Sistem Login dengan Autentikasi JWT  
+67. Aplikasi Manajemen Inventaris  
+68. Aplikasi Pelacak Waktu Kerja  
+69. Aplikasi Manajemen Tugas dengan Kategori dan Penyimpanan Cloud  
+70. Aplikasi Pengedit Gambar (crop, resize, filter)  
+71. Aplikasi Blogging dengan Editor WYSIWYG  
+72. Aplikasi Galeri Foto dengan Unggah dan Penyimpanan Cloud  
+73. Aplikasi Pelacak Pengeluaran dengan Grafik Visualisasi  
+74. Aplikasi Catatan dengan Pencarian dan Filter  
+75. Aplikasi Penjadwalan Acara  
+76. Aplikasi Pelacakan Paket (using API)  
+77. Aplikasi Manajemen Kelas Daring  
+78. Aplikasi Pengingat dengan Notifikasi  
+79. Aplikasi Portofolio Pribadi Interaktif  
+80. Aplikasi Manajemen Karyawan  
+
+
+   Tingkat 5: Master (81-100)
+   
+81. Aplikasi Manajemen Keuangan Lengkap (income, expenses, reports, and analysis)  
+82. Sistem Pembayaran Online Sederhana  
+83. Sistem Autentikasi Pengguna dengan OAuth  
+84. Aplikasi Forum Diskusi dengan Komentar dan Voting  
+85. Aplikasi Pencarian Resep dengan Filter Bahan  
+86. Sistem Reservasi Online (e.g., restaurant reservations)  
+87. Aplikasi Manajemen Perpustakaan Digital  
+88. Aplikasi Dasbor Analitik  
+89. Sistem CRM Sederhana  
+90. Aplikasi Marketplace (online buying and selling)  
+91. Aplikasi E-learning dengan Kuis dan Materi  
+92. Aplikasi Manajemen Proyek dengan Kolaborasi Tim  
+93. Sistem Pelacakan Tugas dengan Kanban  
+94. Sistem Manajemen Inventaris Waktu Nyata  
+95. Aplikasi Obrolan Waktu Nyata dengan WebSockets  
+96. Aplikasi Berbagi File dengan Penyimpanan Awan  
+97. Aplikasi Pelacak Kebugaran dengan Integrasi API Kesehatan  
+98. Sistem Pemesanan Tiket Acara  
+99. Sistem Manajemen Konten Sederhana (CMS) 
+100. Aplikasi Pemesanan Hotel dengan Fitur Pembayaran  
+
+Terima Kasih
