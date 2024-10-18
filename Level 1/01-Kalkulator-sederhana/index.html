@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Sederhana</title>
+  <style>
+    *,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(75, 74, 74);
+  color: white;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.kalkulator {
+  width: 500px;
+  height: auto;
+  background-color: rgb(56, 43, 19);
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  text-align: center
+}
+input {
+  height: 35px;
+  margin: 10px;
+}
+.tombol {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin: 10px;
+}
+
+.btn {
+  background-color: rgb(255, 255, 255);
+  font-weight: 800;
+  font-size: 20px;
+  height: 40px;
+}
+
+.hapus {
+margin: 10px;
+height: 40px;
+
+}
+
+  </style>
+</head>
+
+<body>
+<div class="container">
+  <div class="kalkulator">
+    <h1>Kalkulator Sederhana</h1>
+    <input type="text" placeholder="Masukkan angka" id="angka-masuk"  readonly/>
+    <div class="tombol" >
+      <button class="btn" onclick="nilai(1)">1</button> 
+      <button class="btn" onclick="nilai(2)">2</button>
+      <button class="btn" onclick="nilai(3)">3</button>
+      <button class="btn" onclick="nilai(4)">4</button>
+      <button class="btn" onclick="nilai(5)">5</button>
+      <button class="btn" onclick="nilai(6)">6</button>
+      <button class="btn" onclick="nilai(7)">7</button>
+      <button class="btn" onclick="nilai(8)">8</button>
+      <button class="btn" onclick="nilai(9)">9</button>
+      <button class="btn" onclick="nilai(0)">0</button>
+      <button class="btn" onclick="minus()">(-)</button>
+      <button class="btn" onclick="titik()">(.)</button>
+      <button class="btn" onclick="jumlah('+')">+</button>
+      <button class="btn" onclick="jumlah('-')">-</button>
+      <button class="btn" onclick="jumlah('*')">*</button>
+      <button class="btn" onclick="jumlah('/')">/</button>
+      <button class="btn" onclick="hapus()">Hapus</button>
+      <button class="btn" onclick="jumlah('%')">%</button>
+    </div>
+    <button class="btn hapus" onclick="hasil()">=</button>
+  </div>
+</div>
+
+<script> 
+  let angkaPertama = '';
+let oprator = '';
+let angkaKedua = '';
+
+function nilai(number) {
+  const angkaMasuk = document.getElementById('angka-masuk');
+  angkaMasuk.value += number;
+}
+
+function minus() {
+  const angkaMasuk = document.getElementById('angka-masuk');
+  
+  if (angkaMasuk.value[0] !== '-' && angkaMasuk.value !== '') {
+      angkaMasuk.value = '-' + angkaMasuk.value;
+  }
+}
+
+function titik() {
+  const angkaMasuk = document.getElementById('angka-masuk');
+
+  if ( angkaMasuk.value !== '' && !angkaMasuk.value.includes('.')) {
+    angkaMasuk.value += '.';
+  }
+}
+
+function hapus() {
+  const angkaMasuk = document.getElementById('angka-masuk')
+  angkaMasuk.value = angkaMasuk.value.slice(0, -1)
+}
+
+function jumlah(op) {
+  const angkaMasuk = document.getElementById('angka-masuk');
+
+  if (angkaMasuk.value !== '') {
+    angkaPertama = angkaMasuk.value;
+    oprator = op;
+    angkaMasuk.value = '';
+  }
+}
+
+function hasil() {
+  const angkaMasuk = document.getElementById('angka-masuk');
+  angkaKedua = angkaMasuk.value;
+
+let hasil = 0;
+
+if (oprator === '+') {
+  hasil = parseFloat(angkaPertama) + parseFloat(angkaKedua);
+} else if (oprator === '-') {
+  hasil = parseFloat(angkaPertama) - parseFloat(angkaKedua);
+
+} else if (oprator === '*') {
+  hasil = parseFloat(angkaPertama) * parseFloat(angkaKedua);
+} else if (oprator === '/') {
+  hasil = parseFloat(angkaPertama) / parseFloat(angkaKedua)
+} else if (oprator === '%') {
+  hasil = parseFloat(angkaPertama) % parseFloat(angkaKedua)
+} 
+
+angkaMasuk.value = hasil;
+
+angkaPertama = '';
+angkaKedua = '';
+oprator = ''
+
+}
+
+// Kekurangan
+
+// 1. Tidak bisa menghitung lebih dari 2 angka, hanya bisa menghitung 2 angka saja
+
+// 2. Tidak bisa menghitung angka yang lebih dari 10 digit, hanya bisa menghitung angka yang lebih kecil dari 10 digit saja
+</script>
+</body>
+
+</html>
