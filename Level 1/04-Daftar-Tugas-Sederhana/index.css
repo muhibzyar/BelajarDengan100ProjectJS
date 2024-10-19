@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 600px;
+  background-color: blanchedalmond;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+input {
+  margin-bottom: 30px;
+}
+
+li {
+  background-color: aliceblue;
+  list-style: decimal;
+  margin-bottom: 10px;
+  font-size: 20px;
+}

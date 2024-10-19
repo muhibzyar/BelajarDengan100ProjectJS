@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konversi Suhu</title>
+ 
+</head>
+
+<body>
+  <div class="container">
+    <div class="theBox">
+      <div class="box">
+        <h1> Konversi Suhu</h1>
+      </div>
+      <div class="box1">
+        <input type="text" id="Celcius" value="" class="hasil" placeholder="Masukkan suhu"><br><br>
+        <button class="button" onclick="resetForm()">Reset</button>
+      </div>
+
+      <div class="box">
+        <input type="text" id="outputCelcius" readonly class="outputForm"><br>
+        <input type="radio" name="suhu" id="celcius" onchange="updateUnit(this, 'C')">
+        <label for="celcius">Celcius(°C)</label><br>
+      </div>
+
+      <div class="box">
+        <input type="text" id="outputFahrenheit" readonly class="outputForm"><br>
+        <input type="radio" name="suhu" id="fahrenheit" onchange="updateUnit(this, 'F')">
+        <label for="fahrenheit">Fahrenheit(°F)</label><br>
+      </div>
+
+      <div class="box">
+        <input type="text" id="outputReamur" readonly class="outputForm"><br>
+        <input type="radio" name="suhu" id="reamur" onchange="updateUnit(this, 'R')">
+        <label for="reamur">Reamur(°R)</label><br>
+      </div>
+
+      <div class="box">
+        <input type="text" id="outputRankine" readonly class="outputForm"> 
+        <input type="radio" name="suhu" id="rankine" onchange="updateUnit(this, 'Ra')">
+        <label for="rankine">Rankine(°Ra)</label><br>
+      </div>
+
+      <div class="box">
+        <input type="text" id="outputKelvin" readonly class="outputForm">
+        <input type="radio" name="suhu" id="kelvin" onchange="updateUnit(this, 'K')">
+        <label for="kelvin">Kelvin(K)</label><br>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

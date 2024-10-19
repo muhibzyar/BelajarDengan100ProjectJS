@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #313131;
+  color: white;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.theBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px solid #000000;
+  border-radius: 10px;
+  height: auto;
+  width: 500px;
+  padding: 20px;
+}
+
+.box {
+  display: flex;
+  margin-left: 60px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 800;
+}
+.box1 {
+  display: flex;
+  margin: 30px 20px 10px 60px;
+  font-size: 20px;
+}
+
+.hasil {
+  width: 200px;
+  height: 30px;
+  margin-right: 10px;
+}
+button {
+  width: 90px;
+  height: 30px;
+}
+.outputForm {
+  width: 120px;
+  height: 30px;
+  margin-right: 40px;
+}
+
+label {
+  margin-left: 20px;
+}
