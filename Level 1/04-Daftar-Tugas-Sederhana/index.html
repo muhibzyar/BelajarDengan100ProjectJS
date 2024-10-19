@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Tugas</title>
+  <style>
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .box {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      width: 600px;
+      background-color: blanchedalmond;
+      border: 3px solid black;
+      border-radius: 10px;
+    }
+
+    input {
+      margin-bottom: 30px;
+    }
+
+    li {
+      background-color: aliceblue;
+      list-style: decimal;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <h1>Daftar Tugas</h1>
+      <ul id="tugas">
+        <button onclick="tambahTugas" id="tambahTugas">Tambah</button>
+        <input type="text" id="tugasInput" placeholder="Tambahkan tugas..." />
+        <li id="daftarTugasku">Berak</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("tambahTugas").addEventListener("click", function () {
+       const tugasInput = document.getElementById("tugasInput");
+       const tugasText = tugasInput.value.trim();
+
+       if (tugasText === '') {
+        alert("Tolong isi tugasnya...");
+        return;
+       }
+       const daftarTugas = document.getElementById('daftarTugasku');
+
+       const li = document.createElement('li');
+       li.textContent = tugasText;
+
+       const tombolHapus = document.createElement('button');
+       tombolHapus.textContent = 'Hapus';
+       tombolHapus.addEventListener('click', function () {
+        daftarTugas.removeChild(li);
+       });
+
+       li.appendChild(tombolHapus);
+       daftarTugas.appendChild(li)
+       tugasInput.value = '';
+    })
+  </script>
+</body>
+
+</html>
