@@ -24,7 +24,7 @@ Terima kasih
 2. Konverter Suhu (Celsius to Fahrenheit)  
 3. Jam Digital  
 4. Daftar Tugas Sederhana  
-5. Penghitung Mundur  
+5. Penghitung Mundur
 6. Permainan Batu-Gunting-Kertas  
 7. Pengecek Tahun Kabisat  
 8. Konverter Mata Uang Sederhana  
