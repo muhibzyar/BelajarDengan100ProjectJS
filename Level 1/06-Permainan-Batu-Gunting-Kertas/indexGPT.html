@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batu-Gunting-Kertas Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      margin: 10px;
+      cursor: pointer;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Game Batu-Gunting-Kertas</h1>
+  <p>Pilih salah satu:</p>
+  
+  <!-- Tombol Pilihan Pemain -->
+  <button id="batu">Batu</button>
+  <button id="gunting">Gunting</button>
+  <button id="kertas">Kertas</button>
+
+  <!-- Tempat Menampilkan Hasil -->
+  <p id="result">Hasil akan ditampilkan di sini</p>
+
+  <script>
+    // Fungsi untuk memilih secara acak dari Kertas, Batu, atau Gunting
+    function getComputerChoice() {
+      const choices = ['kertas', 'batu', 'gunting']; // 3 pilihan
+      const randomIndex = Math.floor(Math.random() * choices.length); // Mengacak pilihan
+      return choices[randomIndex]; // Mengembalikan hasil pilihan acak
+    }
+
+    // Fungsi untuk menentukan pemenang
+    function determineWinner(playerChoice, computerChoice) {
+      if (playerChoice === computerChoice) {
+        return "It's a tie!"; // Jika pilihan sama, seri
+      }
+
+      if (playerChoice === 'batu') {
+        return computerChoice === 'gunting' ? "You win! Batu beats Gunting." : "You lose! Kertas beats Batu.";
+      }
+
+      if (playerChoice === 'gunting') {
+        return computerChoice === 'kertas' ? "You win! Gunting beats Kertas." : "You lose! Batu beats Gunting.";
+      }
+
+      if (playerChoice === 'kertas') {
+        return computerChoice === 'batu' ? "You win! Kertas beats Batu." : "You lose! Gunting beats Kertas.";
+      }
+    }
+
+    // Fungsi utama yang berjalan ketika pemain memilih
+    function playGame(playerChoice) {
+      const computerChoice = getComputerChoice(); // Mendapatkan pilihan acak komputer
+      const result = determineWinner(playerChoice, computerChoice); // Menentukan hasil pertandingan
+      document.getElementById('result').textContent = `Player chose ${playerChoice}, Computer chose ${computerChoice}. ${result}`; // Menampilkan hasil di layar
+    }
+
+    // Menambahkan event listener ke tombol Batu
+    document.getElementById('batu').addEventListener('click', function() {
+      playGame('batu'); // Ketika pemain memilih batu
+    });
+
+    // Menambahkan event listener ke tombol Gunting
+    document.getElementById('gunting').addEventListener('click', function() {
+      playGame('gunting'); // Ketika pemain memilih gunting
+    });
+
+    // Menambahkan event listener ke tombol Kertas
+    document.getElementById('kertas').addEventListener('click', function() {
+      playGame('kertas'); // Ketika pemain memilih kertas
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Permainan Batu-Gunting-Kertas</title>
+</head>
+<style>
+  *,
+  html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .thebox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 20px;
+  }
+
+  .box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .box h1 {
+    margin-top: 10px;
+  }
+
+  button {
+    width: 60px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <h1>Permainan Batu-Gunting-Kertas</h1>
+    <div class="thebox">
+
+      <div class="box">
+        <h1>Komputer</h1>
+        <p id="pilihanKomputer">(Computer)</p>
+      </div>
+      <br>
+      <p id="hasil">VS</p>
+
+      <div class="box">
+        <p id="pilihanUser">(P1)</p>
+        <h1>You</h1>
+      </div>
+
+      <div class="tombol">
+        <button id="kertas">Kertas</button>
+        <button id="batu">Batu</button>
+        <button id="gunting">Gunting</button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script>
+    // Fungsi untuk mendapatkan pilihan acak untuk komputer
+    function getComputerChoice() {
+      const choices = ['kertas', 'batu', 'gunting']; // 3 pilihan
+      const randomIndex = Math.floor(Math.random() * choices.length); // Mengacak pilihan
+      return choices[randomIndex]; // Mengembalikan hasil pilihan acak
+    }
+
+    // Fungsi untuk menentukan pemenang
+    function determineWinner(playerChoice, computerChoice) {
+      if (playerChoice === computerChoice) {
+        return "It's a tie!";
+      }
+
+      if (playerChoice === 'batu') {
+        return computerChoice === 'gunting' ? "You win! Batu Mengalahkan Gunting." : "You lose! Kertas Mengalahkan Batu.";
+      }
+
+      if (playerChoice === 'gunting') {
+        return computerChoice === 'kertas' ? "You win! Gunting Mengalahkan Kertas." : "You lose! Batu Mengalahkan Gunting.";
+      }
+
+      if (playerChoice === 'kertas') {
+        return computerChoice === 'batu' ? "You win! Kertas Mengalahkan Batu." : "You lose! Gunting Mengalahkan Kertas.";
+      }
+    }
+
+    // Fungsi untuk memperbarui tampilan hasil dan pilihan
+    function updateResult(playerChoice, computerChoice, result) {
+      document.getElementById('pilihanUser').textContent = playerChoice;
+      document.getElementById('pilihanKomputer').textContent = computerChoice;
+      document.getElementById('hasil').textContent = result;
+    }
+
+    // Fungsi utama untuk memulai permainan
+    function playGame(playerChoice) {
+      const computerChoice = getComputerChoice(); // Mendapatkan pilihan acak komputer
+      const result = determineWinner(playerChoice, computerChoice); // Menentukan hasil pertandingan
+      updateResult(playerChoice, computerChoice, result); // Memperbarui tampilan dengan hasil
+    }
+
+    // Menambahkan event listener ke tombol Kertas
+    document.getElementById('kertas').addEventListener('click', function() {
+      playGame('kertas'); // Pemain memilih Kertas
+    });
+
+    // Menambahkan event listener ke tombol Batu
+    document.getElementById('batu').addEventListener('click', function() {
+      playGame('batu'); // Pemain memilih Batu
+    });
+
+    // Menambahkan event listener ke tombol Gunting
+    document.getElementById('gunting').addEventListener('click', function() {
+      playGame('gunting'); // Pemain memilih Gunting
+    });
+  </script>
+</body>
+
+</html>
